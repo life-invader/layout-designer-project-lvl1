@@ -80,7 +80,6 @@ body {
 .header::before {
   content: '';
   position: absolute;
-  /* display: block; */
   top: 0;
   left: 0;
   width: 100%;
@@ -231,4 +230,72 @@ body {
 .card-text {
   margin-top: 16px;
   line-height: 25px;
+}
+
+/* Effect Ikea-effect */
+.effect {
+  position: relative;
+}
+
+.effect-inner {
+  padding: var(--section-top-bot-padding) 0;
+}
+
+.effect-top {
+  display: flex;
+  column-gap: 30px;
+}
+
+.effect-subtitle {
+  font-family: var(--font-title);
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-dark-transparent);
+}
+
+.effect-title {
+  font-size: 60px;
+  line-height: 72px;
+  font-family: var(--font-title);
+}
+
+.effect-desription {
+  margin-top: 30px;
+  font-size: 34px;
+  line-height: 41px;
+  font-family: var(--font-title);
+}
+
+.effect-text-block {
+  margin-top: 100px;
+}
+
+.text-title {
+  color: var(--color-white);
+  background-color: var(--color-brown);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px 10px;
+}
+
+.text-wrapper {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.1;
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
