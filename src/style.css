@@ -37,6 +37,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -137,7 +138,7 @@ body {
 .section-video {
   text-align: center;
   /* тень внутрь - смещение по x - смещение по y - цвет */
-  box-shadow: inset 0px -100px black;
+  box-shadow: inset 0px -100px #42413c;
 }
 
 .section-video-inner {
@@ -165,9 +166,69 @@ body {
   margin-top: 30px;
 }
 
-/* Test */
+/* Navigation */
+.navigation {
+  background-color: var(--color-main-dark);
+}
 
-.test {
-  background-color: black;
-  height: 1000px;
+.navigation-inner {
+  padding: 100px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.card {
+  flex-basis: 350px;
+  min-height: 323px;
+}
+
+.card-link {
+  padding: 24px;
+  background-color: var(--color-bright);
+
+  transition: all 0.2s;
+}
+
+.card-link:hover {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
+.card-link:hover .card-title {
+  color: var(--color-white);
+}
+
+.card-main-title {
+  color: var(--color-main);
+  font-size: 52px;
+  line-height: 62px;
+  font-family: var(--font-title);
+}
+
+.card-main-title span {
+  color: var(--color-white);
+}
+
+.card-number {
+  font-size: 64px;
+  font-family: var(--font-title);
+  color: inherit;
+}
+
+.card-title {
+  font-size: 34px;
+  line-height: 41px;
+  font-family: var(--font-title);
+  color: var(--color-main);
+
+  margin-top: 40px;
+  transition: all 0.2s;
+}
+
+.card-text {
+  margin-top: 16px;
+  line-height: 25px;
 }
