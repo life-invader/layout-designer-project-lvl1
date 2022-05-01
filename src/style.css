@@ -131,3 +131,43 @@ body {
 .btn-header {
   margin-top: 40px;
 }
+
+/* Section-video */
+
+.section-video {
+  text-align: center;
+  /* тень внутрь - смещение по x - смещение по y - цвет */
+  box-shadow: inset 0px -100px black;
+}
+
+.section-video-inner {
+  padding-top: 100px;
+}
+
+.section-video-title {
+  font-size: var(--h2-size);
+  font-family: var(--font-title);
+}
+
+.section-video-title span {
+  color: var(--color-main);
+}
+
+.section-video-text {
+  margin-top: 27px;
+  line-height: 26px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* Test */
+
+.test {
+  background-color: black;
+  height: 1000px;
+}
