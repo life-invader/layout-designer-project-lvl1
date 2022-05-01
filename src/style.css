@@ -239,6 +239,7 @@ body {
 
 .effect-inner {
   padding: var(--section-top-bot-padding) 0;
+  position: relative;
 }
 
 .effect-top {
@@ -259,7 +260,7 @@ body {
   font-family: var(--font-title);
 }
 
-.effect-desription {
+.effect-description {
   margin-top: 30px;
   font-size: 34px;
   line-height: 41px;
@@ -280,6 +281,10 @@ body {
   padding: 5px 10px;
 }
 
+.effect-img {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
 .text-wrapper {
   margin-top: 20px;
   display: flex;
@@ -298,4 +303,24 @@ body {
   background-image: url(./img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Common effect section*/
+
+.effect:nth-child(2n) {
+  background-color: var(--color-brown);
+  color: var(--color-white);
+}
+
+.effect:nth-child(2n) .effect-img {
+  order: 1;
+}
+
+.effect:nth-child(2n) .text-title {
+  color: var(--color-brown);
+  background-color: var(--color-white);
+}
+
+.effect:nth-child(2n) .effect-subtitle {
+  color: var(--color-half-transparent);
 }
