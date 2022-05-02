@@ -232,7 +232,7 @@ header .btn.nav {
 
 #navigation .container {
   flex-direction: row;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   align-content: flex-start;
   padding-top: 200px;
 }
@@ -280,7 +280,7 @@ header .btn.nav {
   margin-bottom: 16px;
 }
 
-.card:hover>h3 {
+.card:hover > h3 {
   color: var(--white);
 }
 
@@ -364,7 +364,7 @@ header .btn.nav {
   margin-top: 20px;
 }
 
-ul+p {
+ul + p {
   margin: 20px 0 18px;
 }
 
