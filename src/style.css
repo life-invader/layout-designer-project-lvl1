@@ -64,7 +64,7 @@ button {
   display: inline-block;
   color: var(--color-white);
   background-color: var(--color-main);
-  padding: 11.5px 23.5px;
+  padding: 12px 26px;
 
   text-transform: uppercase;
   font-weight: 700;
@@ -119,7 +119,7 @@ button {
 }
 
 .header-text-wrapper {
-  margin-top: 185px;
+  margin-top: 199px;
 
 
   display: flex;
@@ -127,6 +127,10 @@ button {
   column-gap: 30px;
 
   line-height: 25px;
+}
+
+.header-text + .header-text {
+  margin-top: 17px;
 }
 
 .text-col {
