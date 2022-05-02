@@ -102,6 +102,7 @@ button {
 
   font-size: 72px;
   line-height: 86px;
+  font-weight: 400;
 
   position: relative;
   z-index: 1;
@@ -121,12 +122,12 @@ button {
 .header-text-wrapper {
   margin-top: 199px;
 
-
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
 
   line-height: 25px;
+  font-weight: 400;
 }
 
 .header-text + .header-text {
